@@ -1,1 +1,122 @@
-
+* {
+    box-sizing: border-box;
+  }
+  
+  .App {
+    text-align: center;
+    background: linear-gradient(#333, #0094c8);
+    min-height: 100vh;
+    font-size: calc(4px + 2vmin);
+    color: white;
+    padding-bottom: 0.25rem;
+  }
+  
+  .App-link {
+    color: #0097c8;
+  }
+  
+  .task-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+  }
+  
+  .card {
+    background-color: #eee;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #222;
+    margin: 1rem;
+    position: relative;
+    cursor: pointer;
+    flex: 1 1 200px;
+  }
+  
+  .card-img {
+    max-width: 100%;
+    clip-path: fill-box;
+  }
+  
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .card-body {
+    padding: 0.5rem;
+    color: #222;
+  }
+  
+  .done {
+    background-color: gray;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+  }
+  
+  .float-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5rem;
+  }
+  
+  .priority-1 {
+    color: yellow;
+  }
+  
+  .priority-2 {
+    color: orange;
+  }
+  
+  .priority-3 {
+    color: red;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #eee;
+    max-width: 100vw;
+    z-index: 1;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  
+  .nav-link {
+    padding: 0.5rem;
+  }
+  
+  .nav-link > a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+  }
+  
+  .nav-link > a:hover {
+    color: #0097c8;
+  }
+  
+  /* THEMES */
+  .theme-primary {
+    background: linear-gradient(#333, #0094c8);
+  }
+  .theme-secondary {
+    background: linear-gradient(#333, gray);
+  }
+  .theme-retro {
+    background: linear-gradient(#333, #270091, #b700ff);
+  }
+  .theme-purple {
+    background: linear-gradient(#333, #270091);
+  }
+  .theme-dark {
+    background: linear-gradient(#333, #002431);
+  }
