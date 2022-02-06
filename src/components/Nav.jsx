@@ -1,30 +1,26 @@
 import { Link } from "react-router-dom";
+import Theme from "./Theme";
+import { routes } from "../data/routes";
 
-const Nav = () => {
-    return (
-        <nav> 
-            <ul className="nav-list">
-                <li className="nav-link">
-                    <Link to="/">Home</Link>
-                </li>
-                <li className="nav-link">
-                    <Link to="films">Films</Link>
-                </li>
-                <li className="nav-link">
-                    <Link to="people">People</Link>
-                </li>
-                <li className="nav-link">
-                    <Link to="locations">Locations</Link>
-                </li>
-                <li className="nav-link">
-                    <Link to="species">Species</Link>
-                </li>
-                <li className="nav-link">
-                    <Link to="vehicles">Vehicles</Link>
-                </li>
-            </ul>
-        </nav>
-    );
+const Nav = (props) => {
+  return (
+    <nav>
+      <ul className="nav-list">
+        {routes.map((route, index) => {
+          if (route.isNavLink) {
+            return (
+              <li key={index} className="nav-link">
+                <Link to={route.routeProps.path}>{route.title}</Link>
+              </li>
+            );
+          } else return null;
+        })}
+        <li className="nav-link">
+          <Theme {...props} />
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Nav;

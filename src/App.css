@@ -4,7 +4,7 @@
   
   .App {
     text-align: center;
-    background: linear-gradient(#333, #0094c8);
+    background: linear-gradient(#333, #e073b7);
     min-height: 100vh;
     font-size: calc(4px + 2vmin);
     color: white;
@@ -12,7 +12,7 @@
   }
   
   .App-link {
-    color: #0097c8;
+    color: #030c0f;
   }
   
   .task-container {
@@ -22,7 +22,7 @@
   }
   
   .card {
-    background-color: #eee;
+    background-color: lightpink;
     border-radius: 8px;
     box-shadow: 0px 0px 5px #222;
     margin: 1rem;
@@ -105,18 +105,23 @@
   }
   
   /* THEMES */
+
+  .h-100 {
+    height: 100vh;
+  }
+  
   .theme-primary {
-    background: linear-gradient(#333, #0094c8);
+    background: linear-gradient(#333, #e25ac0);
   }
   .theme-secondary {
-    background: linear-gradient(#333, gray);
+    background: linear-gradient(#333, rgb(155, 131, 151));
   }
   .theme-retro {
-    background: linear-gradient(#333, #270091, #b700ff);
+    background: linear-gradient(#333, #c3c969, #e77111);
   }
   .theme-purple {
-    background: linear-gradient(#333, #270091);
+    background: linear-gradient(#333, #43229e);
   }
   .theme-dark {
-    background: linear-gradient(#333, #002431);
+    background: linear-gradient(#333, #024861);
   }
